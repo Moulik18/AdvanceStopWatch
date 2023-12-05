@@ -39,11 +39,11 @@ A feature-rich stopwatch application built with Laravel.
 
 
 1. **Copy the .env.example file to .env and configure your database settings:**
-
+ **Update the database connection settings in the .env file.**
    ```bash
    cp .env.example .env
 
-   **Update the database connection settings in the .env file.**
+  
 
 1. **Clone the repository:**
 
