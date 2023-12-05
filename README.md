@@ -141,4 +141,4 @@ Feel free to contribute to this project. If you find any issues or have suggesti
 
 ## Contributing
 This project is licensed under the MIT License.
-This update includes a section named "Create a New Laravel Project" with instructions on installing the Laravel Installer globally and using it to create a new Laravel project named `advanced-stopwatch`. Adjust the commands as needed based on your preferences.
+This update includes a section named "Create a New Laravel Project" with instructions on installing the Laravel Installer globally and using it to create a new Laravel project named `AdvanceStopWatch`. Adjust the commands as needed based on your preferences.
