@@ -31,3 +31,20 @@ A feature-rich stopwatch application built with Laravel.
 
    ```bash
    git clone https://github.com/Moulik18/advanced-stopwatch.git
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Moulik18/advanced-stopwatch.git
+
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Moulik18/advanced-stopwatch.git
+
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Moulik18/advanced-stopwatch.git
