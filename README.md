@@ -1,6 +1,6 @@
 # Advanced Stopwatch
 
-A feature-rich stopwatch application built with Laravel.
+A feature-rich stopwatch application built with Laravel, Bootstrap, and Font Awesome.
 
 ## Table of Contents
 
@@ -9,14 +9,16 @@ A feature-rich stopwatch application built with Laravel.
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
 - [Usage](#usage)
+- [Features](#features)
 - [Contributing](#contributing)
 - [License](#license)
 
 ## Features
 
-- Start and stop the stopwatch.
+- Start, stop, and reset the stopwatch.
 - Record lap times.
-- Additional advanced features (customize based on your implementation).
+- Responsive design with Bootstrap.
+- Stylish icons with Font Awesome.
 
 ## Getting Started
 
@@ -30,22 +32,9 @@ A feature-rich stopwatch application built with Laravel.
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Moulik18/advanced-stopwatch.git
+   git clone https://github.com/Moulik18/AdvanceStopWatch.git
 
-1. **Navigate to the project directory:**
+2. **Navigate to the project directory:**
 
    ```bash
    cd advanced-stopwatch
-
-
-1. **Copy the .env.example file to .env and configure your database settings:**
- **Update the database connection settings in the .env file.**
-   ```bash
-   cp .env.example .env
-
-  
-
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/Moulik18/advanced-stopwatch.git
