@@ -169,7 +169,7 @@ A feature-rich stopwatch application built with Laravel, Bootstrap, and Font Awe
 ## License
 
 - This project is licensed under the MIT License.
-This update includes a section named "Create a New Laravel Project" with instructions on installing the Laravel Installer globally and using it to create a new Laravel project named `advanced-stopwatch`. Adjust the commands as needed based on your preferences.
+This update includes a section named "Create a New Laravel Project" with instructions on installing the Laravel Installer globally and using it to create a new Laravel project named `AdvanceStopWatch`. Adjust the commands as needed based on your preferences.
 
 
 
