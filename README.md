@@ -21,46 +21,137 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+# Advanced Stopwatch
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+A feature-rich stopwatch application built with Laravel, Bootstrap, and Font Awesome.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Table of Contents
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Laravel Sponsors
+## Features
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- Start, stop, and reset the stopwatch.
+- Record lap times.
+- Responsive design with Bootstrap.
+- Stylish icons with Font Awesome.
 
-### Premium Partners
+## Getting Started
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### Prerequisites
 
-## Contributing
+- [Composer](https://getcomposer.org/)
+- [PHP](https://www.php.net/)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Installation
 
-## Code of Conduct
+#### Create a New Laravel Project
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. **Install Laravel Installer globally:**
 
-## Security Vulnerabilities
+   ```bash
+   composer global require laravel/installer
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+2. **Create a new Laravel project:**
 
-## License
+   ```bash
+   laravel new advanced-stopwatch
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+3. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Moulik18/AdvanceStopWatch.git
+
+4. **Create a new Laravel project:**
+
+   ```bash
+   composer create-project --prefer-dist laravel/laravel stopwatch-app
+
+5. **Navigate to the project directory:**
+
+   ```bash
+   cd advanced-stopwatch
+
+6. **Generate a controller:**
+
+   ```bash
+   php artisan make:controller StopwatchController
+
+7. **routes/web.php**
+
+   ```bash
+   <?php
+      use Illuminate\Support\Facades\Route;
+      use App\Http\Controllers\StopwatchController;
+      
+      Route::get('/', [StopwatchController::class, 'index']);
+      Route::post('/stopwatch/start', [StopwatchController::class, 'start']);
+      Route::post('/stopwatch/stop', [StopwatchController::class, 'stop']);
+   
+7. **routes/web.php**
+
+   ```bash
+   <?php
+      use Illuminate\Support\Facades\Route;
+      use App\Http\Controllers\StopwatchController;
+      
+      Route::get('/', [StopwatchController::class, 'index']);
+      Route::post('/stopwatch/start', [StopwatchController::class, 'start']);
+      Route::post('/stopwatch/stop', [StopwatchController::class, 'stop']);
+
+8. **app/Http/Controllers/StopwatchController.php**
+
+   ```bash
+   <?php
+    namespace App\Http\Controllers;
+    
+    use Illuminate\Http\Request;
+    use Carbon\Carbon;
+    
+    class StopwatchController extends Controller
+    {
+        private $startTime;
+        private $laps = [];
+    
+        public function index()
+        {
+            return view('stopwatch');
+        }
+    
+        public function start()
+        {
+            $this->startTime = now(); // Save the current time as the start time
+            $this->laps = []; // Clear laps array when starting a new stopwatch
+            return response()->json(['status' => 'success']);
+        }
+    
+        public function stop()
+        {
+            $elapsedTime = now()->diffInSeconds($this->startTime); // Calculate elapsed time
+            return response()->json(['status' => 'success', 'elapsed_time' => $elapsedTime, 'laps' => $this->laps]);
+        }
+    
+        public function lap()
+        {
+            $lapTime = now()->diffInSeconds($this->startTime); // Calculate lap time
+            $this->laps[] = $lapTime; // Save lap time to the laps array
+            return response()->json(['status' => 'success', 'lap_time' => $lapTime]);
+        }
+    }
+
+5. **Create a new file : 'stopwatch.blade.php' LocationL resources/views/stopwatch.blade.php**
+
+
+   
+
+
+
+   
+
