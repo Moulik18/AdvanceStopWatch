@@ -72,7 +72,7 @@ A feature-rich stopwatch application built with Laravel, Bootstrap, and Font Awe
       Route::post('/stopwatch/start', [StopwatchController::class, 'start']);
       Route::post('/stopwatch/stop', [StopwatchController::class, 'stop']);
    
-7. **routes/web.php**
+8. **routes/web.php**
 
    ```bash
    <?php
@@ -83,7 +83,7 @@ A feature-rich stopwatch application built with Laravel, Bootstrap, and Font Awe
       Route::post('/stopwatch/start', [StopwatchController::class, 'start']);
       Route::post('/stopwatch/stop', [StopwatchController::class, 'stop']);
 
-5. **app/Http/Controllers/StopwatchController.php**
+9. **app/Http/Controllers/StopwatchController.php**
 
    ```bash
    <?php
@@ -123,12 +123,22 @@ A feature-rich stopwatch application built with Laravel, Bootstrap, and Font Awe
         }
     }
 
-5. **Create a new file : 'stopwatch.blade.php' LocationL resources/views/stopwatch.blade.php**
+10. **Create a new file : 'stopwatch.blade.php' LocationL resources/views/stopwatch.blade.php**
     <a href="https://uploadnow.io/files/PYjtpxN">click here to download stopwatch.blade.php</a>
 
+## Usage
 
-   
+- Visit [http://localhost:8000/stopwatch](http://localhost:8000/stopwatch) in your web browser.
+- Click the "Start" button to start the stopwatch.
+- Click the "Stop" button to stop the stopwatch and view the elapsed time.
+- Click the "Lap" button to record lap times.
+- Click the "Reset" button to reset the stopwatch and clear lap times.
+- Explore additional advanced features.
 
+## Contributing
 
+Feel free to contribute to this project. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
-   
+## Contributing
+This project is licensed under the MIT License.
+This update includes a section named "Create a New Laravel Project" with instructions on installing the Laravel Installer globally and using it to create a new Laravel project named `advanced-stopwatch`. Adjust the commands as needed based on your preferences.
