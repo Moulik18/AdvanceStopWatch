@@ -32,17 +32,18 @@ A feature-rich stopwatch application built with Laravel.
    ```bash
    git clone https://github.com/Moulik18/advanced-stopwatch.git
 
-1. **Clone the repository:**
+1. **Navigate to the project directory:**
 
    ```bash
-   git clone https://github.com/Moulik18/advanced-stopwatch.git
+   cd advanced-stopwatch
 
 
-1. **Clone the repository:**
+1. **Copy the .env.example file to .env and configure your database settings:**
 
    ```bash
-   git clone https://github.com/Moulik18/advanced-stopwatch.git
+   cp .env.example .env
 
+   **Update the database connection settings in the .env file.**
 
 1. **Clone the repository:**
 
