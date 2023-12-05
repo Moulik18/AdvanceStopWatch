@@ -125,8 +125,6 @@ A feature-rich stopwatch application built with Laravel, Bootstrap, and Font Awe
 
 5. **Create a new file : 'stopwatch.blade.php' LocationL resources/views/stopwatch.blade.php**
 
-   ```bash
-   
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -289,6 +287,9 @@ A feature-rich stopwatch application built with Laravel, Bootstrap, and Font Awe
 
 </body>
 </html>
+
+
+   
 
 
 
